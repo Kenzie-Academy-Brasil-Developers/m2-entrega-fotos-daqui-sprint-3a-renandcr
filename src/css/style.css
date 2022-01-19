@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins&family=Roboto:wght@500&display=swap');
+:root{
+    --font-main: "Poppins", sans-serif;
+    --font-secundary: "Roboto", sans-serif;
+    --color-primary: #7253b0;
+    --color-primary-50: #f1eef8;
+    --gray-4: #212529;
+    --gray-3:#868E96;
+    --gray-2: #F8F9FA;
+    --gray-0: #F5F5F5;
+}
+header{
+    background-color: var(--color-primary);
+    border: solid 2px gray;
+    padding: 15px 10px 15px 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-pesquisa{
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--gray-4);
+}
+input{
+    margin-top: 15px;
+    display: block;
+    font-family: "Inter", sans-serif;
+    background-color: var(--gray-0);
+    border-radius: 8px;
+    width: 299px;
+    height: 60px;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-3);
+}
+.button-pesquisa{
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 309px;
+    height: 60px;
+    padding: 15px 30px 15px 30px;
+    font-family: var(--font-secundary);
+    font-size: 16px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-primary);
+    font-family: var(--font-main);
+    width: 309px;
+}
+li{
+    background-color: var(--color-primary-50);
+    padding: 2px 15px 2px 15px;
+    border-radius: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+}
+.div-img{
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgba(99, 94, 94, 0.185);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+.div-legenda{
+    width: 315px;
+    height: 66px;
+    border-radius: 4px;
+    padding: 11px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+}
+.button-estilo{
+    cursor: pointer;
+    background-color: var(--color-primary);
+    width: 35px;
+    height: 27px;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-legenda-parent{
+    display: flex;
+    margin: 0 20px 0 20px;
+}
+.div-legenda{
+    display: flex;   
+    flex-direction: column;
+    justify-content: space-around;
+}
+.div-retangulo{
+    background-color: var(--color-primary);
+    width: 22px;
+    height: 3.72px;
+    border-radius: 2px;
+}
+.h3-legenda{
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 12px;
+}
+.h3-legenda-menor{
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 8px;
+}
+.button-voltar{
+    transform:  rotate(180deg);
+}
+.div-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4px;
+}
+.img-seta{
+    max-width: 100%;
+    height: auto;
+}
+footer{
+    height: 30px;
+}
+
+@media (max-width: 360px){
+    input{
+        width: 170px;
+        height: 40px;
+    }
+    .button-pesquisa{
+        width: 180px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        width: 180px;
+    }
+    li{
+        background-color: var(--color-primary-50);
+        padding: 0px 5px 0px 5px;
+        border-radius: 3px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .div-legenda-parent{
+        width: 250px;
+    }
+}
+@media (max-width: 240px){
+    input{
+        width: 150px;
+        height: 25px;
+        font-size: 10px;
+
+    }
+    .button-pesquisa{
+        width: 160px;
+        height: 25px;
+        font-size: 10px;
+    }
+    ul{
+        width: 160px;
+    }
+    li{
+        background-color: var(--color-primary-50);
+        padding: 0px 5px 0px 5px;
+        border-radius: 3px;
+        margin-top: 10px;
+        font-size: 7px;
+        font-weight: 400;
+    }
+}
+
+/* Desktop */
+@media(min-width: 700px){
+    header{
+        padding: 38px 120px 38px 120px;
+        display: flex;
+        justify-content: center;
+    }
+    .div-pesquisa{
+        border-radius: 5px;
+        padding: 20px 10px 20px 10px;
+        display: flex;
+        width: 786px;
+        height: 153px;
+    }
+    input{
+        margin-top: 15px;
+        display: inline-block;
+        width: 270px;
+        height: 60px;
+        padding: 0px 15px 0px 15px;
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .button-pesquisa{
+        margin-top: 15px;
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+        font-size: 14px;
+        padding: 0;
+    }
+    .div-img{
+        width: 450px;
+        height: auto;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media(min-width: 1208px){
+    header{
+        padding: 38px 350px 38px 350px;
+        display: flex;
+        justify-content: center;
+    }
+    .div-pesquisa{
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        width: 786px;
+        height: 153px;
+    }
+    input{
+        margin-top: 15px;
+        display: inline-block;
+        width: 300px;
+        height: 60px;
+        padding: 0px 15px 0px 15px;
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .button-pesquisa{
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+        width: 130px;
+        height: 60px;
+        padding: 15px 30px 15px 30px;
+        font-size: 16px;
+    }
+    .div-img{
+        width: 450px;
+        height: auto;
+    }
+}
